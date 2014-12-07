@@ -1,3 +1,4 @@
+library("data.table")
 #Dates we are looking for
 firstDate<-as.Date("2007-02-01")
 lastDate<-as.Date("2007-02-02")
@@ -74,7 +75,7 @@ lines(d$Sub_metering_3,col="blue")
 
 #add legend
 legend("topright",legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-       lty=1,col=c("black","red","blue"),y.intersp=0.5,bty="n")
+       lty=1,col=c("black","red","blue"),y.intersp=0.3,bty="n")
 
 #add x-axis with weekdays
 axis(side=1,at=c(1,nrow(d)*0.5,nrow(d)),labels=c("Thu","Fri","Sat")) 

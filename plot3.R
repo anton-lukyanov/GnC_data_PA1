@@ -1,3 +1,4 @@
+library("data.table")
 #Dates we are looking for
 firstDate<-as.Date("2007-02-01")
 lastDate<-as.Date("2007-02-02")
